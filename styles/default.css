@@ -1,0 +1,15 @@
+/* body {
+
+}
+
+header { */
+
+/* } */
+
+nav {
+    float: center;
+}
+
+nav li {
+    display: inline-block;
+}
