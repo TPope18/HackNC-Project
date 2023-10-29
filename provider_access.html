@@ -6,7 +6,6 @@
         <!--link stylesheet here-->
         <link rel="stylesheet" href="styles/default.css">
         <title>Provider Access</title>
-        <script src="scripts/scripts.js"></script>
     </head>
     <body>
         <header>
@@ -31,20 +30,16 @@
         <main>
             <h2>Provider Access</h2>
             <table>
-                <tr>
-                    <th>Patient First Name</th>
-                    <th>Patient Last Name</th>
-                    <th>Profile</th>
-                </tr>
-                <script>
-                    for (const patient of patientInfoArray) {
-                        document.write("<tr>");
-                        document.write("<td>" + patient.firstName + "</td>");
-                        document.write("<td>" + patient.lastName + "</td>");
-                        document.write("<td><button type='button' name='button'>View</button></td>");
-                        document.write("</tr>");
-                    }
-                </script>
+                <thead>
+                    <tr>
+                        <th>Patient First Name</th>
+                        <th>Patient Last Name</th>
+                        <th>Profile</th>
+                    </tr> 
+                </thead>
+                <tbody id="patientTBody">
+
+                </tbody>
             </table>
         </main>
         <footer></footer>
