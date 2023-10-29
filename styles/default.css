@@ -50,12 +50,13 @@ h2, h3 {
 input[type="text"], 
 input[type="number"], 
 input[type="email"],
-input[type="textarea"] {
+input[type="textarea"], .select {
     width: 100%;
     padding: 5px;
 }
 
 .button-container {
+    padding-top: 15px;
     padding-bottom: 15px;
     margin: 0 auto;
     text-align: center;

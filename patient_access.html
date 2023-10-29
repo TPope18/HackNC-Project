@@ -29,13 +29,13 @@
         </header>
         <main>
             <h2>Patient Account</h2>
-            <form action="#" class="patient_information" id="patient_information">
+            <form action="#" class="contact" id="contact">
                 <label for="first_name">First Name: <input type="text" name="first_name" id="first_name" required></label>   
                 <label for="last_name">Last Name: <input type="text" name="last_name" id="last_name" required></label>     
                 <br>
                 <label for="street_address">Address: <input type="text" name="address" id="address"></label>  
                 <label for="state">State:
-                    <select name="state" id="state">
+                    <select name="state" id="state" class="select">
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
                         <option value="AZ">Arizona</option>
@@ -88,13 +88,16 @@
                         <option value="WY">Wyoming</option>
                     </select>
                 </label>
+                <br>
                 <label for="zip_code">Zip Code: <input type="text" name="zip_code" id="zip_code" required></label>
                 <label for="phone_number">Phone Number: <input type="number" name="phone_number" id="phone_number" required></label>
                 <label for="email">Email Address: <input type="email" name="email" id="email" required></label>
                 <label for="symptoms">What symptoms are you currently experiencing?
                     <input type="text">
                 </label>
-                <input type="submit" value="submit" onclick="storePatientInfo();">
+                <div class="button-container">
+                    <input type="button" value="SUBMIT">
+                </div>
             </form>
         </main>
         <footer></footer>
