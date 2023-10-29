@@ -105,3 +105,12 @@ footer {
     background-color: #035890;
     color: white;
 }
+.center{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    text-align: center
+}
