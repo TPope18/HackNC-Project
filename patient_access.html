@@ -9,12 +9,14 @@
     </head>
     <body>
         <header>
-            <div id = "content">
-                <div class = "nav">
-                        <a class = "active" href = "index.html">Home</a>
-                        <a href = "#">Contact Form</a></li>
-                        <a href = "#">Login</button>
-                </div>
+            <h1>PatSys</h1>
+            <div class = "nav">
+                <a href="index.html" class="home">Home</a>
+                <a href="patient_access.html">Patient Access</a></li>
+                <a href="provider_access.html">Provider Access</a></li>
+                <a href="contact_form.html">Contact</a></li>
+                <a href="#">Login</a>
+            </div>
         </header>
         <main>
             <h2>Patient Account</h2>
@@ -81,8 +83,15 @@
                 <label for="zip_code">Zip Code: <input type="text" name="zip_code" id="zip_code" required></label>
                 <label for="phone_number">Phone Number: <input type="number" name="phone_number" id="phone_number" required></label>
                 <label for="email">Email Address: <input type="email" name="email" id="email" required></label>
+                <br>
+                <br>
+                <hr>
+                <br>
                 <label for="symptoms">What symptoms are you currently experiencing?
-                    <input type="text">
+                    <input type="text" name="symptoms" id="symptoms" required>
+                </label>
+                <label for="income">To find you the best price for your medication, what is your current monthly income?
+                    <input type="number" name="income" id="income" required>
                 </label>
                 <div class="button-container">
                     <input type="button" value="SUBMIT">
