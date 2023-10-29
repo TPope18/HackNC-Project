@@ -6,6 +6,7 @@
         <!--link stylesheet here-->
         <link rel="stylesheet" href="styles/default.css">
         <title>Patient Survey</title>
+        <script src="scripts/scripts.js"></script>
     </head>
     <body>
         <header>
@@ -19,9 +20,9 @@
                         <!--this is your nav bar-->
                         <li><a href="#">Homepage</a></li> 
                         <!--patient information-->
-                        <li><a href="patient_form.html">Patient Information</a></li>
+                        <li><a href="patient_access.html">Patient Access</a></li>
                         <!--doctor form-->
-                        <li><a href="doctor_form.html">Doctor Information</a></li>
+                        <li><a href="provider_access.html">Provider Access</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
@@ -29,7 +30,7 @@
         </header>
         <main>
             <h2>Patient Account</h2>
-            <form action="#">
+            <form action="#" class="patient_information" id="patient_information">
                 <label for="first_name">First Name: <input type="text" name="first_name" id="first_name" required></label>   
                 <label for="last_name">Last Name: <input type="text" name="last_name" id="last_name" required></label>     
                 <br>
@@ -89,7 +90,12 @@
                     </select>
                 </label>
                 <label for="zip_code">Zip Code: <input type="text" name="zip_code" id="zip_code" required></label>
-                <label for="phone_number">Phone Number: <input type="text" name="phone_number" id="phone_number" required></label>
+                <label for="phone_number">Phone Number: <input type="number" name="phone_number" id="phone_number" required></label>
+                <label for="email">Email Address: <input type="email" name="email" id="email" required></label>
+                <label for="symptoms">What symptoms are you currently experiencing?
+                    <input type="text">
+                </label>
+                <input type="submit" value="submit" onclick="storePatientInfo();">
             </form>
         </main>
         <footer></footer>

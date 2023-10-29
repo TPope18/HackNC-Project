@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--link stylesheet here-->
+        <link rel="stylesheet" href="styles/default.css">
+        <title>Provider Access</title>
+        <script src="scripts/scripts.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Hello</h1>
+            <!--nav bar-->
+            <!--being worked on-->
+            <div class="container">
+                <!--image goes here-->
+                <nav>
+                    <ul>
+                        <!--this is your nav bar-->
+                        <li><a href="#">Homepage</a></li> 
+                        <!--patient information-->
+                        <li><a href="patient_access.html">Patient Access</a></li>
+                        <!--doctor form-->
+                        <li><a href="provider_access.html">Provider Access</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <h2>Provider Access</h2>
+            <table>
+                <tr>
+                    <th>Patient First Name</th>
+                    <th>Patient Last Name</th>
+                    <th>Profile</th>
+                </tr>
+                <script>
+                    for (const patient of patientInfoArray) {
+                        document.write("<tr>");
+                        document.write("<td>" + patient.firstName + "</td>");
+                        document.write("<td>" + patient.lastName + "</td>");
+                        document.write("<td><button type='button' name='button'>View</button></td>");
+                        document.write("</tr>");
+                    }
+                </script>
+            </table>
+        </main>
+        <footer></footer>
+    </body>
+</html>
